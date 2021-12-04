@@ -24,7 +24,7 @@ When an owner accept offers from a carer, they can use chat functionality to tal
 When a carer sends a request to meet a pet, it will be notified to the owner in real time. Also, when an owner approves a carer's request, it will be notified in real time to the carer. With this feature, both will not overlook the action from the other.
 # Requirements 🙏
 To use this application, 
-* This is the server side repository. You need to run the client side at the same time. This is [Client Repository](https://github.com/Team-Freshly-Washed-Turtles/pet-client).
+* This is the server side repository. You need to run the client side at the same time. This is [Client Repository](https://github.com/karin0216/pet-client).
 * You need **Node.js**, **npm** installed on your computer. Also, you need to use **mongodb** on your computer or on cloud.
 # Getting Started 🎬
 #### 1. Install Dependencies
