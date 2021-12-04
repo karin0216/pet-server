@@ -44,7 +44,7 @@ To start the server, run this code in your terminal.
 npm run dev
 ```
 #### 4. Access To Your Local Host
-To see the app, run the client server ([more detail](https://github.com/Team-Freshly-Washed-Turtles/pet-client)).  
+To see the app, run the client server ([more detail](https://github.com/karin0216/pet-client)).  
 After running the client server, open your browser and access your local host url which you set up in ```.env``` file in client side.
 #### 5. Let's get started!
 <img width="500" alt="Screen Shot 2021-11-24 at 19 17 11" src="https://user-images.githubusercontent.com/83794734/143219860-ee33732a-67ce-4038-8d9d-40a292b4e1ab.png"> 
