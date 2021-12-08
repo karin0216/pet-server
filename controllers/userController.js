@@ -1,15 +1,12 @@
 const User = require("../models/User");
 const bcrypt = require("bcrypt");
-const { update } = require("../models/User");
 
-// update user info
 const updateUser = async (req, res) => {
   const request_data = req.body.updateData;
   const request_id = req.body._id;
   console.log(request_data);
 
   if (request_id === req.params.id) {
-    // if a user want to change password we need to hash it again
     if (request_data.password) {
       try {
         const salt = await bcrypt.genSalt(10);
@@ -35,7 +32,6 @@ const updateUser = async (req, res) => {
   }
 };
 
-// get a user
 const getUser = async (req, res) => {
   try {
     const user = await User.findById(req.params.id);

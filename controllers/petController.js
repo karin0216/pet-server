@@ -1,4 +1,3 @@
-const { index } = require("../models/Carer");
 const Pet = require("../models/Pet");
 const Tag = require("../models/Tag");
 
@@ -79,7 +78,6 @@ const getPetsByType = async (req, res) => {
   }
 };
 
-// get pets by pet tag
 const getPetsBySingleTag = async (req, res) => {
   try {
     const params = req.query.value;
@@ -94,7 +92,6 @@ const getPetsBySingleTag = async (req, res) => {
   }
 };
 
-// get pets by pet tag
 const getPetsByAllTag = async (req, res) => {
   try {
     const params = req.query.value;

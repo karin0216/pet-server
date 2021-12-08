@@ -2,8 +2,6 @@ const Pet = require("../models/Pet");
 const User = require("../models/User");
 const mongoose = require("mongoose");
 
-//get upcoming requests
-
 const seenAllRequest = async (req, res) => {
   try {
     const { user_id } = req.user;
@@ -49,7 +47,6 @@ const getUpcomingRequest = async (req, res) => {
   }
 };
 
-//carer pending requests
 const getCarerPendingRequest = async (req, res) => {
   try {
     const request = await User.aggregate([
@@ -74,7 +71,7 @@ const getCarerPendingRequest = async (req, res) => {
     console.log(error);
   }
 };
-//if approve or rejectedd
+
 const modifyRequest = async (req, res) => {
   try {
     const { request_id, user_id, action } = req.body;
@@ -92,7 +89,7 @@ const modifyRequest = async (req, res) => {
     console.log(error);
   }
 };
-//get requests
+
 const getRequestsForPetOwner = async (req, res) => {
   try {
     const { user_id } = req.user;
@@ -172,7 +169,6 @@ const getRequestsByStatusAndPetId = async (req, res) => {
   }
 };
 
-//add request
 const addRequest = async (req, res) => {
   try {
     const { user_id } = req.user;
