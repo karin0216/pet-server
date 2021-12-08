@@ -4,7 +4,6 @@ const bcrypt = require("bcrypt");
 const updateUser = async (req, res) => {
   const request_data = req.body.updateData;
   const request_id = req.body._id;
-  console.log(request_data);
 
   if (request_id === req.params.id) {
     if (request_data.password) {
