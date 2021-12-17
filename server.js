@@ -1,7 +1,7 @@
 const express = require("express");
 const Socket = require("socket.io");
 const cors = require("cors");
-const db = require("./db");
+require("./db");
 const morgan = require("morgan");
 
 const app = express();
@@ -23,13 +23,11 @@ app.use("/pet", require("./routes/pet"));
 app.use("/pic", require("./routes/upload"));
 app.use("/requests", require("./routes/request"));
 app.use("/tag", require("./routes/tag"));
+app.use("/messages", require("./routes/message"));
 
 app.get("/test", async (req, res) => {
-  res.send("jhgjg");
+  res.send("test");
 });
-
-//route for messages
-app.use("/messages", require("./routes/message"));
 
 const server = app.listen(port, () => {
   console.log(`listening to port ${port}`);
