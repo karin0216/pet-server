@@ -20,7 +20,7 @@ app.use(cors());
 app.use("/auth", require("./routes/auth"));
 app.use("/user", require("./routes/user"));
 app.use("/pet", require("./routes/pet"));
-app.use("/pic", require("./routes/upload"));
+app.use("/pics", require("./routes/upload"));
 app.use("/requests", require("./routes/request"));
 app.use("/tag", require("./routes/tag"));
 app.use("/messages", require("./routes/message"));
